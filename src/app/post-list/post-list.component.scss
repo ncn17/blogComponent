@@ -1,0 +1,26 @@
+.post_head{
+    display : flex;
+    flex-wrap : wrap;
+    align-items: center;
+    justify-content : space-between;
+}
+
+.btnDislike{
+    margin-left: 10px;
+}
+
+.myDate{
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+body{
+    background-color: #000;
+}
+
+.zone{
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0px;
+}

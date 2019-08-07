@@ -1,0 +1,14 @@
+<li [ngClass]="{'list-group-item': true,
+                'zone': true,
+                'list-group-item-success': loveIts > 0,
+                'list-group-item-danger': loveIts < 0  }">
+    <div class="post_head">
+        <h3>{{title}}</h3>
+        <span class="myDate">{{created_at | date : 'short'}}</span>
+    </div>   
+    <p class="text-justify">{{content}}</p>
+    <div>
+        <button class="btn btn-success" (click)="onLike()"><i class="glyphicon glyphicon-thumbs-up"></i> {{loveIts}}</button>
+        <button class="btn btn-danger btnDislike"  (click)="onDisLike()"><i class="glyphicon glyphicon-thumbs-down"></i></button>
+    </div>
+</li>
